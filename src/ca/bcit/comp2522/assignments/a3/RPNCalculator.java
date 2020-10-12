@@ -47,7 +47,10 @@ public class RPNCalculator {
   public int processFormula(final String formula) throws
       StackOverflowException, InvalidOperationTypeException,
       StackUnderflowException {
-    if (formula == null || formula.length() == 0) {
+    if (formula == null) {
+      throw new IllegalArgumentException("Input value must not be null or "
+          + "less than 0 in length");
+    } else if (formula.length() == 0) {
       throw new StackUnderflowException("Input value must not be null or "
           + "less than 0 in length");
     } else {
