@@ -178,14 +178,14 @@ public final class BookStoreFactory {
 
           NodeList courseList =  bookEl
               .getElementsByTagName("courseapplicability");
-          Element crs = (Element) bookEl.getElementsByTagName("courseapplicability").item(0);
+          Element crs = (Element) bookEl
+              .getElementsByTagName("courseapplicability").item(0);
           for (int j = 0; j < courseList.getLength(); j++) {
             tempBook.pushCourses(courseList.item(j).getTextContent());
             Element crsEl = (Element) courseList.item(0).getChildNodes();
             tempBook.pushInstitution(((Element) crs
                 .getElementsByTagName("course")
                 .item(0)).getAttribute("institute"));
-            System.out.println("Institute:  " + crsEl.getAttribute("institute"));
           }
           NodeList authorNl = bookEl.getElementsByTagName("author");
           for (int k = 0; k < authorNl.getLength(); k++) {
