@@ -83,9 +83,9 @@ public final class BookStoreFactory {
    */
   private Node createBook(final Book book) {
     Element bookNode = newDoc.createElement("book");
-    bookNode.setAttribute("edition", book.getIsbn());
+    bookNode.setAttribute("edition", book.getEdition());
     bookNode.setAttribute("year", book.getYear());
-    bookNode.setAttribute("isbn", book.getEdition());
+    bookNode.setAttribute("isbn", book.getIsbn());
     //name
     Element nameElement = newDoc.createElement("name");
     nameElement.insertBefore(newDoc.createTextNode(book.getBookName()),
