@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <bookstore>
-    <book edition="0321049314" isbn="6" year="2000">
+    <book edition="6" isbn="0321049314" year="2000">
         <name>Psychology</name>
         <description>Introductory level Pyschology course book</description>
         <courseapplicability>
@@ -19,7 +19,7 @@
             <availability days="1"/>
         </stock>
     </book>
-    <book edition="0596001436" isbn="1" year="2001">
+    <book edition="1" isbn="0596001436" year="2001">
         <name>Java and XSLT</name>
         <description>Embedding XML Processing Into Java Applications</description>
         <courseapplicability>
@@ -37,7 +37,7 @@
             <availability days="2"/>
         </stock>
     </book>
-    <book edition="0130655678" isbn="1" year="2001">
+    <book edition="1" isbn="0130655678" year="2001">
         <name>Definitive XML Schema</name>
         <description>XML Schema Reference and Tutorial</description>
         <courseapplicability>
