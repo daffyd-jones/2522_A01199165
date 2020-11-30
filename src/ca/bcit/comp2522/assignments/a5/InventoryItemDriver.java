@@ -247,6 +247,7 @@ public class InventoryItemDriver {
       System.out.println("sales item 1 does not equal sales item 2");
     }
     items = rem(items, 3);
+    salesItem4 = null;
     System.out.println("\n");
     for (int i = 0; i < items.length; i++) {
       System.out.println(items[i].toString());
